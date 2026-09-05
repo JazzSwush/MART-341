@@ -2,6 +2,29 @@ body {
     background-color:aliceblue;
 }
 
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: midnightblue;
+}
+ul {
+
+    padding: 20px;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 10px;
+}
+
+a {
+    color: aliceblue;
+    font-size: 20px;
+}
+
 h1 {
     color: midnightblue;
     text-align: center;
