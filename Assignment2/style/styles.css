@@ -1,14 +1,28 @@
 body {
     background-color:aliceblue;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    max-width: 100%;
+    background-color: midnightblue;
+    color: aliceblue;
+}
+
+footer p {
+    margin: 5px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
     max-width: 100%;
-    margin: 0 auto;
+    padding: 30px 0;
     background-color: midnightblue;
 }
 ul {
-
+    margin: 0;
     padding: 20px;
     text-align: center;
 }
@@ -17,6 +31,7 @@ li {
     list-style-type: none;
     display: inline-block;
     margin: 0 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px 10px;
 }
 
@@ -25,37 +40,41 @@ a {
     font-size: 20px;
 }
 
-h1 {
+header {
     color: midnightblue;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+    margin: 40px;
     border-style: solid;
     border-width: 2px;
     border-color: midnightblue;
     border-radius: 10px;
-    padding: 20px;
 }
 
 h3 {
     text-align: center;
     font-size: 36px;
     padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
     color: darkslateblue;
     text-align: center;
     font-size: 46px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-p {
+main p {
     text-align: center;
     font-size: 20px;
     border-style: solid;
     border-width: 4px;
     border-color: darkslateblue;
     border-radius: 10px;
+    margin: 40px;
     padding: 50px;
     
 }
