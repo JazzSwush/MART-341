@@ -1,0 +1,146 @@
+body {
+    background-color:aliceblue;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    max-width: 100%;
+    background-color: midnightblue;
+    color: aliceblue;
+}
+
+footer p {
+    margin: 5px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    max-width: 100%;
+    padding: 30px 0;
+    background-color: midnightblue;
+}
+ul {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 10px;
+}
+
+a {
+    color: aliceblue;
+    font-size: 28px;
+}
+
+header {
+    color: midnightblue;
+    text-align: center;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    margin: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: midnightblue;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 36px;
+    padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    color: darkslateblue;
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main > p {
+    text-align: center;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: darkslateblue;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 50px;
+    
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.switch-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 40px 50px;
+    gap: 20px;
+}
+.switch-card {
+    flex: 0 0 auto;
+    width: 300px;
+    border: 2px solid midnightblue;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+.switch-card h4 {
+    font-size: 24px;
+    color: midnightblue;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.switch-card p {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0;
+    padding: 30px 30px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: darkslateblue;
+    border-radius: 10px;
+}
+.switch-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.intro p {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 40px;
+    padding: 30px 30px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: darkslateblue;
+    border-radius: 10px;
+}
+.brand-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 40px 40px;
+    gap: 20px;
+}
+.brand-keyboard img {
+    max-width: 200px;
+    height: auto;
+    border: 2px solid midnightblue;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
