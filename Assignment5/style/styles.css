@@ -11,8 +11,8 @@ footer {
     text-align: center;
     padding: 10px 0;
     max-width: 100%;
-    background-color: midnightblue;
-    color: aliceblue;
+    background-color: #DD9714;
+    color: midnightblue;
 }
 
 footer p {
@@ -160,10 +160,9 @@ header {
     font-size: 40px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    margin: 40px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: midnightblue;
+    margin: 40px 85px 0px 85px;
+    padding: 20px;
+    background-color: #DD9714;
     border-radius: 10px;
 }
 
@@ -172,6 +171,7 @@ h3 {
     font-size: 36px;
     padding: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #1F1F46;
 }
 
 h2 {
