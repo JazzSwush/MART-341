@@ -248,13 +248,13 @@ img {
 
 .switch-scroll {
     display: flex;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px 40px 50px;
     gap: 20px;
 }
 .switch-card {
-    flex: 0 0 auto;
-    width: 300px;
+    width: 200px;
     border: 2px solid midnightblue;
     border-radius: 10px;
     padding: 20px;
@@ -294,7 +294,8 @@ img {
 }
 .brand-scroll {
     display: flex;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px 40px 40px;
     gap: 20px;
 }
@@ -525,4 +526,24 @@ img {
 #gallery-section img{
     width: calc(33.333% - 10px);
     height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #gallery-section img {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 1000px){
+    .switch-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .switch-card {
+        width: 100%;
+    }
 }
