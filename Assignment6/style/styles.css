@@ -343,14 +343,21 @@ img {
 }
 
 .switch-scroll {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px 40px 50px;
-    gap: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    grid-auto-columns: 260px;
+    gap: 24px;
+    overflow-x: auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 20px 40px 40px;
 }
 .switch-card {
-    width: 200px;
+    width: auto;
+    box-sizing: border-box;
     border: 2px solid midnightblue;
     border-radius: 10px;
     padding: 20px;
@@ -568,12 +575,18 @@ img {
 }
 
 .contact-section a {
-    display: block;
+    display: inline-block;
     color: darkslateblue;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.contact-section a:hover {
+    color: #DD9714;
+    transform: scale(1.1);
 }
 /* End of Contact Form Styles */
 
@@ -683,11 +696,20 @@ footer p {
     .switch-card {
         width: 300px;
     }
+
+    .switch-scroll {
+        grid-auto-columns: 300px;
+    }
 }
 
 @media (max-width: 600px) {
     .switch-card {
         width: 100%;
+    }
+
+    .switch-scroll {
+        padding: 20px;
+        grid-auto-columns: 85%;
     }
 }
 /* end of media queries */
