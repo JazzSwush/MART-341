@@ -1,5 +1,10 @@
 # Keyboard Website
 ## This website will guide you to making your own keyboard or finding one.
 
-### Component Plan
-- I already have added a flexbox to my gallery and switches page. For my gallery, it is compiled images/content for my website comprise of images. For my switches page, I decided to change the amount of rows and columns each switch type shows, but hopefully if I add more it still scrolls. These are cards in a scroller so it helps with information and the images provided in these cards. This allows the user to view the switches more conveniently instead of just scrolling through one row. Now there would be multiple columns and rows and scroll through looking at multiple at a time. This component requires more cards and information/images on each card to be fully designed as intended. I'll be using a flexbox for this portion, which I have already included.
+- I plan on continuing developing this website, but I am not sure if i will do it as my final project for this class. If I do not have any other ideas, then I will use this website for my final project. 
+
+1. If so
+- I would probably remember about div's and classes to keep organized and to make it easier to edit each section. I would most likely rememebr spacing, alignments and heirarchy to improve this website. I think I would also remember about flexboxes and adding a form or gallery.
+
+2. If not
+- The navigation bar is most transferable to any website I make. Adding component cards would help and flex boxes too. Also some transitional things like hover effects that adds to the website.
