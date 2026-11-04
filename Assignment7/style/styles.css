@@ -498,7 +498,10 @@ body {
         color: var(--vermilion);
         transform: scale(1.1);
     }
-
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
 
     /* Footer */
     footer {
