@@ -296,6 +296,190 @@ body {
         background-color: var(--vermilion);
     }
 
+/* Explore Page Header */
+.explore-header {
+    background-color: var(--olive);
+    color: var(--paper);
+    text-align: center;
+    padding: 65px 8%;
+}
+
+.explore-header h1 {
+    font-size: 52px;
+    margin: 0 0 15px;
+}
+
+.explore-header p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Genre Navigation */
+.genre-navigation {
+    text-align: center;
+    padding: 35px 8%;
+    background-color: var(--paper);
+}
+
+.genre-navigation h2 {
+    font-size: 26px;
+    margin: 0 0 25px;
+}
+
+.genre-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.genre-links a {
+    display: inline-block;
+    background-color: var(--mustard);
+    color: var(--ink);
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.genre-links a:hover {
+    background-color: var(--vermilion);
+    color: var(--paper);
+    transform: translateY(-4px);
+}
+
+
+/* Genre Sections */
+.genre-section {
+    padding: 45px 8%;
+    background-color: var(--paper);
+    scroll-margin-top: 20px;
+}
+
+.genre-heading {
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--mustard);
+    padding-bottom: 15px;
+}
+
+.genre-heading h2 {
+    color: var(--ink);
+    font-size: 32px;
+    margin: 0 0 10px;
+}
+
+.genre-heading p {
+    color: var(--olive);
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* Genre Book Cards */
+.genre-book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+/* Individual Explore Cards */
+.explore-book-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 260px;
+    box-shadow: 0 4px 12px rgba(37, 44, 50, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(37, 44, 50, 0.2);
+}
+
+
+/* Explore Book Images */
+.explore-book-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    background-color: var(--paper);
+    padding: 15px;
+}
+
+
+/* Explore Book Information */
+.explore-book-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 15px 20px 20px;
+}
+
+.explore-book-info h3 {
+    color: var(--ink);
+    font-size: 19px;
+    line-height: 1.4;
+    margin: 12px 0;
+}
+
+.explore-book-info p {
+    color: var(--olive);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+
+.explore-book-info .learn-more {
+    margin-top: auto;
+}
+
+
+/* Explore Page Responsive Layout */
+@media (max-width: 750px) {
+
+    .explore-header {
+        padding: 45px 7%;
+    }
+
+    .explore-header h1 {
+        font-size: 40px;
+    }
+
+    .genre-navigation {
+        padding: 30px 7%;
+    }
+
+    .genre-links {
+        gap: 10px;
+    }
+
+    .genre-links a {
+        padding: 10px 16px;
+    }
+
+    .genre-section {
+        padding: 35px 7%;
+    }
+
+    .genre-book-container {
+        justify-content: center;
+    }
+
+    .explore-book-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 
     /* Back to Top */
     .back-to-top {

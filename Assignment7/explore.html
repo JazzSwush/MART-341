@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
 
-    <title>Novel Nook</title>
+    <title>Books | Novel Nook</title>
 </head>
 
 <body id="top">
 
+    <!-- Navigation Bar -->
     <nav class="navbar">
 
         <a href="index.html" class="logo">
@@ -23,7 +25,6 @@
             <span>Novel Nook</span>
         </a>
 
-        <!-- Navigation Links -->
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="explore.html">Explore</a></li>
@@ -31,36 +32,223 @@
             <li><a href="about.html">About Us</a></li>
         </ul>
 
-        <a href="favorites.html" class="heart-icon" aria-label="Favorite books">
-            ♡
-        </a>
-
     </nav>
+
 
     <main>
 
-        <section class="intro-section">
+        <!-- Page Header -->
+        <header class="explore-header">
 
-            <div class="intro-content">
-                <h1>Explore.</h1>
+            <h1>Books.</h1>
 
-                <p>
-                    Genres
-                </p>
+            <p>
+                Find your next favorite story. Browse by genre
+                and discover something new.
+            </p>
+
+        </header>
+
+
+        <!-- Genre Selections -->
+        <section class="genre-navigation">
+
+            <h2>Browse by Genre</h2>
+
+            <div class="genre-links">
+
+                <a href="#fantasy">Fantasy</a>
+                <a href="#romance">Romance</a>
+                <a href="#mystery">Mystery</a>
+                <a href="#adventure">Adventure</a>
+                <a href="#scifi">Sci-Fi</a>
+                <a href="#horror">Horror</a>
+
             </div>
 
+        </section>
+
+
+        <!-- Fantasy Section -->
+        <section class="genre-section" id="fantasy">
+
+            <div class="genre-heading">
+                <h2>Fantasy</h2>
+                <p>Magical worlds, mythical creatures, and unforgettable adventures.</p>
+            </div>
+
+            <div class="genre-book-container">
+
+                <div class="explore-book-card">
+                    <img src="images/fourth-wing.jpg" alt="Fourth Wing book cover">
+                    <div class="explore-book-info">
+                        <span class="book-genre">Fantasy</span>
+                        <h3>Fourth Wing</h3>
+                        <p>By Rebecca Yarros</p>
+                        <p>A young woman enters a dangerous dragon-riding academy.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="explore-book-card">
+                    <img src="images/six-of-crows.jpg" alt="Six of Crows book cover">
+                    <div class="explore-book-info">
+                        <span class="book-genre">Fantasy</span>
+                        <h3>Six of Crows</h3>
+                        <p>By Leigh Bardugo</p>
+                        <p>A group of criminals attempt an impossible heist.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="explore-book-card">
+                    <img src="images/harry-potter.jpg" alt="Harry Potter book cover">
+                    <div class="explore-book-info">
+                        <span class="book-genre">Fantasy</span>
+                        <h3>Harry Potter</h3>
+                        <p>By J.K. Rowling</p>
+                        <p>A young wizard discovers a magical world.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Romance Section -->
+        <section class="genre-section" id="romance">
+
+            <div class="genre-heading">
+                <h2>Romance</h2>
+                <p>Love stories, emotional moments, and unforgettable connections.</p>
+            </div>
+
+            <div class="genre-book-container">
+
+                <div class="explore-book-card">
+                    <img src="images/the-fault-in-our-stars.jpg" alt="The Fault in Our Stars book cover">
+                    <div class="explore-book-info">
+                        <span class="book-genre">Romance</span>
+                        <h3>The Fault in Our Stars</h3>
+                        <p>By John Green</p>
+                        <p>Two teenagers find love while facing life's challenges.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="explore-book-card">
+                    <img src="images/song-of-achilles.jpg" alt="The Song of Achilles book cover">
+                    <div class="explore-book-info">
+                        <span class="book-genre">Romance</span>
+                        <h3>The Song of Achilles</h3>
+                        <p>By Madeline Miller</p>
+                        <p>A retelling of a legendary Greek love story.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Mystery Section -->
+        <section class="genre-section" id="mystery">
+
+            <div class="genre-heading">
+                <h2>Mystery</h2>
+                <p>Uncover secrets, solve puzzles, and follow unexpected twists.</p>
+            </div>
+
+            <div class="genre-book-container">
+
+                <div class="explore-book-card">
+                    <img src="images/mystery-book.jpg" alt="Mystery book cover">
+                    <div class="explore-book-info">
+                        <span class="book-genre">Mystery</span>
+                        <h3>Book Title</h3>
+                        <p>By Author Name</p>
+                        <p>Add a short description of the story here.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Adventure Section -->
+        <section class="genre-section" id="adventure">
+
+            <div class="genre-heading">
+                <h2>Adventure</h2>
+                <p>Exciting journeys, daring discoveries, and thrilling challenges.</p>
+            </div>
+
+            <div class="genre-book-container">
+
+                <div class="explore-book-card">
+                    <img src="images/percy-jackson.jpg" alt="Percy Jackson book cover">
+                    <div class="explore-book-info">
+                        <span class="book-genre">Adventure</span>
+                        <h3>Percy Jackson and the Lightning Thief</h3>
+                        <p>By Rick Riordan</p>
+                        <p>A young boy discovers he is part of the world of Greek mythology.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Sci-Fi Section -->
+        <section class="genre-section" id="scifi">
+
+            <div class="genre-heading">
+                <h2>Sci-Fi</h2>
+                <p>Explore futuristic worlds, technology, and the unknown.</p>
+            </div>
+
+            <div class="genre-book-container">
+                <!-- Add science fiction book cards here -->
+            </div>
+
+        </section>
+
+
+        <!-- Horror Section -->
+        <section class="genre-section" id="horror">
+
+            <div class="genre-heading">
+                <h2>Horror</h2>
+                <p>Dark stories, eerie settings, and spine-chilling mysteries.</p>
+            </div>
+
+            <div class="genre-book-container">
+                <!-- Add horror book cards here -->
+            </div>
 
         </section>
 
     </main>
 
+
+    <!-- Back to Top -->
     <section class="back-to-top">
         <a href="#top">Back to Top ↑</a>
     </section>
 
+
+    <!-- Footer -->
     <footer>
         <p>© 2026 Novel Nook - Literature Website. All rights reserved.</p>
     </footer>
 
 </body>
+
 </html>
