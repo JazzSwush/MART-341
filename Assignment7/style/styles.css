@@ -22,11 +22,12 @@ body {
 
 /* Navigation Bar */
 .navbar {
-     display: flex;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
     align-items: center;
-    justify-content: space-between;
     background-color: var(--ink);
-    padding: 40px;
+    padding: 40px 80px;
+    gap: 25px;
 }
 
     /* Logo */
@@ -69,17 +70,18 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 35px;
+        gap: 25px;
         list-style: none;
-        margin: 0 30px 0 auto;
+        margin: 0;
         padding: 0;
+        white-space: nowrap;
     }
 
     .nav-links a {
         display: inline-block;
         color: var(--paper);
         text-decoration: none;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bold;
         transition: color 0.3s ease, transform 0.3s ease;
     }
@@ -88,6 +90,40 @@ body {
         color: var(--mustard);
         transform: scale(1.1);
     }
+
+/* Search Bar Styling */
+.search-form {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-width: 0;
+}
+
+.search-form input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background-color: var(--paper);
+    font-size: 16px;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--paper);
+}
+
+.search-form button:hover {
+  background-color: var(--mustard);
+}
 
 
     /* Introduction Section */
