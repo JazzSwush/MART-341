@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Ledger&display=swap" rel="stylesheet">
+
+    <title>Novel Nook</title>
+</head>
+
+<body id="top">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <img src="images/novelNookLogo.png" alt="Logo" class="logo-image">
+            <span>Novel Nook</span>
+        </a>
+
+        <form class="search-form" action="explore.html" method="get">
+            <input type="text" name="query" placeholder="Search books..." aria-label="Search books" required>
+            <button type="submit" class="search-button">
+            <img src="images/searchIcon.png" alt="Search">
+            </button>
+        </form>
+
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="starter.html">Starter Guide</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <section class="intro-section">
+
+            <div class="intro-content">
+                <h1>The Next Chapter Awaits</h1>
+
+                <p>
+                    New to reading and don't know what to read or where to start?
+                    You're in the right place! Discover stories, explore new genres,
+                    and find books that match your interests.
+                </p>
+
+                <a href="explore.html" class="explore-button">
+                    Explore Books →
+                </a>
+            </div>
+
+            <div class="intro-image">
+                <img src="images/dogBook.jpg" alt="Image">
+            </div>
+
+        </section>
+        <!-- Trending Books Section -->
+        <section class="book-section">
+
+            <div class="section-heading">
+                <h2>Trending Books</h2>
+                <p>Stories everyone's talking about right now.</p>
+            </div>
+
+            <div class="book-container">
+
+                <!-- Book 1 -->
+                <div class="book-card">
+
+                    <img src="images/bookCovers/hungerGames.jpg" alt="The Hunger Games book cover">
+
+                    <div class="book-info">
+                        <span class="book-genre">Dystopian</span>
+                        <h3>The Hunger Games</h3>
+                        <p>By Suzanne Collins</p>
+                        <a href="bookDetails.html?id=the-hunger-games" class="learn-more">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Book 2 -->
+                <div class="book-card">
+
+                    <img src="images/bookCovers/fourthWing.jpg" alt="Fourth Wing book cover">
+
+                    <div class="book-info">
+                        <span class="book-genre">Fantasy</span>
+                        <h3>Fourth Wing</h3>
+                        <p>By Rebecca Yarros</p>
+                        <a href="bookDetails.html?id=fourth-wing" class="learn-more">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Book 3 -->
+                <div class="book-card">
+
+                    <img src="images/bookCovers/houseSea.jpg" alt="The House in the Cerulean Sea book cover">
+
+                    <div class="book-info">
+                        <span class="book-genre">Fantasy</span>
+                        <h3>The House in the Cerulean Sea</h3>
+                        <p>By TJ Klune</p>
+                        <a href="bookDetails.html?id=the-house-in-the-cerulean-sea" class="learn-more">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book 4 -->
+                <div class="book-card">
+
+                    <img src="images/bookCovers/harryPotter.jpg" alt="Harry Potter book cover">
+
+                    <div class="book-info">
+                        <span class="book-genre">Fantasy</span>
+                        <h3>Harry Potter</h3>
+                        <p>By J.K. Rowling</p>
+                        <a href="bookDetails.html?id=harry-potter" class="learn-more">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book 5 -->
+                <div class="book-card">
+
+                    <img src="images/bookCovers/courtThorns.jpg" alt="A Court of Thorns and Roses book cover">
+
+                    <div class="book-info">
+                        <span class="book-genre">Romance</span>
+                        <h3>A Court of Thorns and Roses</h3>
+                        <p>By Sarah J. Maas</p>
+                        <a href="bookDetails.html?id=a-court-of-thorns-and-roses" class="learn-more">
+                            Learn More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <section class="back-to-top">
+        <a href="#top">Back to Top ↑</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Novel Nook - Literature Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

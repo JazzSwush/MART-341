@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Ledger&display=swap" rel="stylesheet">
+    <title>Books | Novel Nook</title>
+</head>
+
+<body id="top">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/novelNookLogo.png" alt="Novel Nook Logo" class="logo-image">
+            <span>Novel Nook</span>
+        </a>
+
+        <form class="search-form" action="explore.html" method="get">
+            <input type="text" name="query" placeholder="Search books..." aria-label="Search books" required>
+            <button type="submit" class="search-button">
+                <img src="images/searchIcon.png" alt="Search">
+            </button>
+        </form>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="starter.html">Starter Guide</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Page Header -->
+        <header class="explore-header">
+            <h1>Find the One You Can't Put Down.</h1>
+            <p>Browse by genre and discover something new.</p>
+        </header>
+
+        <!-- Genre Selections -->
+        <section class="genre-navigation">
+            <h2>Browse by Genre</h2>
+            <div class="genre-links">
+                <a href="#fantasy">Fantasy</a>
+                <a href="#romance">Romance</a>
+                <a href="#mystery">Mystery</a>
+                <a href="#adventure">Adventure</a>
+                <a href="#scifi">Sci-Fi</a>
+                <a href="#horror">Horror</a>
+                <a href="#historical">Historical</a>
+                <a href="#comedy">Comedy</a>
+                <a href="#dystopian">Dystopian</a>
+            </div>
+        </section>
+
+        <!-- Explore Layout -->
+        <div class="explore-layout">
+
+            <!-- Filter Sidebar -->
+            <aside class="filter-sidebar">
+                <h2>Filter Books</h2>
+
+                <form id="book-filter">
+
+                    <!-- Format Filters -->
+                    <details class="filter-group" open>
+                        <summary>Format</summary>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="format" value="ebook"> Ebook</label>
+                            <label><input type="checkbox" name="format" value="audiobook"> Audiobook</label>
+                            <label><input type="checkbox" name="format" value="physical"> Physical Book</label>
+                        </div>
+                    </details>
+
+                    <!-- Book Type Filters -->
+                    <details class="filter-group" open>
+                        <summary>Book Type</summary>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="type" value="fiction"> Fiction</label>
+                            <label><input type="checkbox" name="type" value="nonfiction"> Nonfiction</label>
+                        </div>
+                    </details>
+
+                    <!-- Genre Filters -->
+                    <details class="filter-group" open>
+                        <summary>Genre</summary>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="genre" value="fantasy"> Fantasy</label>
+                            <label><input type="checkbox" name="genre" value="romance"> Romance</label>
+                            <label><input type="checkbox" name="genre" value="mystery"> Mystery</label>
+                            <label><input type="checkbox" name="genre" value="adventure"> Adventure</label>
+                            <label><input type="checkbox" name="genre" value="scifi"> Sci-Fi</label>
+                            <label><input type="checkbox" name="genre" value="horror"> Horror</label>
+                            <label><input type="checkbox" name="genre" value="historical"> Historical</label>
+                            <label><input type="checkbox" name="genre" value="comedy"> Comedy</label>
+                            <label><input type="checkbox" name="genre" value="dystopian"> Dystopian</label>
+                        </div>
+                    </details>
+
+                    <!-- Reading Type Filters -->
+                    <details class="filter-group" open>
+                        <summary>Reading Type</summary>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="reading" value="young-adult"> Young Adult</label>
+                            <label><input type="checkbox" name="reading" value="adult"> Adult</label>
+                            <label><input type="checkbox" name="reading" value="short-reads"> Short Reads</label>
+                            <label><input type="checkbox" name="reading" value="series"> Book Series</label>
+                            <label><input type="checkbox" name="reading" value="graphic-novels"> Graphic Novels</label>
+                            <label><input type="checkbox" name="reading" value="manga"> Mangas/Manhwas</label>
+                        </div>
+                    </details>
+
+                    <!-- Filter Buttons -->
+                    <div class="filter-buttons">
+                        <button type="submit" class="apply-filter">Apply Filters</button>
+                        <button type="reset" class="clear-filter">Clear Filters</button>
+                    </div>
+
+                </form>
+            </aside>
+
+            <!-- Explore Content -->
+            <div class="explore-content">
+
+                <!-- Filtered Results -->
+                <section class="filter-results" id="filter-results">
+                    <h2>Filtered Books</h2>
+                    <div class="filter-book-container" id="filter-book-container"></div>
+                    <p id="no-results" hidden>No books match those filters. Try another combination!</p>
+                </section>
+
+                <!-- Fantasy -->
+                <section class="genre-section" id="fantasy">
+                    <div class="genre-heading">
+                        <h2>Fantasy</h2>
+                        <p>Magical worlds, mythical creatures, and unforgettable adventures.</p>
+                    </div>
+
+                    <div class="genre-book-container">
+
+                        <!-- Fourth Wing -->
+                        <div class="explore-book-card" data-type="fiction" data-genre="fantasy" data-format="ebook audiobook physical" data-reading="young-adult series">
+                            <img src="images/bookCovers/fourthWing.jpg" alt="Fourth Wing book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Fantasy</span>
+                                <h3>Fourth Wing</h3>
+                                <p>By Rebecca Yarros</p>
+                                <p>A young woman enters a dangerous dragon-riding academy.</p>
+                                <a href="bookDetails.html?id=fourth-wing" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+
+                        <!-- Six of Crows -->
+                        <div class="explore-book-card" data-type="fiction" data-genre="fantasy" data-format="ebook audiobook physical" data-reading="young-adult series">
+                            <img src="images/bookCovers/sixCrows.jpg" alt="Six of Crows book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Fantasy</span>
+                                <h3>Six of Crows</h3>
+                                <p>By Leigh Bardugo</p>
+                                <p>A group of criminals attempt an impossible heist.</p>
+                                <a href="bookDetails.html?id=six-of-crows" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+
+                        <!-- Harry Potter -->
+                        <div class="explore-book-card" data-type="fiction" data-genre="fantasy" data-format="ebook audiobook physical" data-reading="young-adult series">
+                            <img src="images/bookCovers/harryPotter.jpg" alt="Harry Potter book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Fantasy</span>
+                                <h3>Harry Potter</h3>
+                                <p>By J.K. Rowling</p>
+                                <p>A young wizard discovers a magical world.</p>
+                                <a href="bookDetails.html?id=harry-potter" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+
+                        <div class="explore-book-card" data-type="fiction" data-genre="fantasy" data-format="ebook audiobook physical" data-reading="young-adult series">
+                            <img src="images/bookCovers/houseSea.jpg" alt="The House in the Cerulean Sea book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Fantasy</span>
+                                <h3>The House in the Cerulean Sea</h3>
+                                <p>By TJ Klune</p>
+                                <p>A story about a young man who discovers a hidden world.</p>
+                                <a href="bookDetails.html?id=the-house-in-the-cerulean-sea" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Romance -->
+                <section class="genre-section" id="romance">
+                    <div class="genre-heading">
+                        <h2>Romance</h2>
+                        <p>Love stories, emotional moments, and unforgettable connections.</p>
+                    </div>
+
+                    <div class="genre-book-container">
+
+                        <div class="explore-book-card" data-type="fiction" data-genre="romance" data-format="ebook audiobook physical" data-reading="young-adult">
+                            <img src="images/bookCovers/faultStars.jpg" alt="The Fault in Our Stars book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Romance</span>
+                                <h3>The Fault in Our Stars</h3>
+                                <p>By John Green</p>
+                                <p>Two teenagers find love while facing life's challenges.</p>
+                                <a href="book-details.html?id=the-fault-in-our-stars" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+
+                        <div class="explore-book-card" data-type="fiction" data-genre="romance" data-format="ebook audiobook physical" data-reading="adult">
+                            <img src="images/bookCovers/songAchilles.jpg" alt="The Song of Achilles book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Romance</span>
+                                <h3>The Song of Achilles</h3>
+                                <p>By Madeline Miller</p>
+                                <p>A retelling of a legendary Greek love story.</p>
+                                <a href="bookDetails.html?id=the-song-of-achilles" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+
+                        <div class="explore-book-card" data-type="fiction" data-genre="romance" data-format="ebook audiobook physical" data-reading="adult">
+                            <img src="images/bookCovers/courtThorns.jpg" alt="A Court of Thorns and Roses book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Romance</span>
+                                <h3>A Court of Thorns and Roses</h3>
+                                <p>By Sarah J. Maas</p>
+                                <p>A young woman is drawn into a world of magic and danger.</p>
+                                <a href="bookDetails.html?id=a-court-of-thorns-and-roses" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Mystery -->
+                <section class="genre-section" id="mystery">
+                    <div class="genre-heading">
+                        <h2>Mystery</h2>
+                        <p>Uncover secrets, solve puzzles, and follow unexpected twists.</p>
+                    </div>
+
+                    <div class="genre-book-container">
+                        <div class="explore-book-card" data-type="fiction" data-genre="mystery" data-format="ebook physical" data-reading="adult">
+                            <img src="images/mystery-book.jpg" alt="Mystery book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Mystery</span>
+                                <h3>Book Title</h3>
+                                <p>By Author Name</p>
+                                <p>Add a short description of the story here.</p>
+                                <a href="#" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Adventure -->
+                <section class="genre-section" id="adventure">
+                    <div class="genre-heading">
+                        <h2>Adventure</h2>
+                        <p>Exciting journeys, daring discoveries, and thrilling challenges.</p>
+                    </div>
+
+                    <div class="genre-book-container">
+
+                        <div class="explore-book-card" data-type="fiction" data-genre="adventure" data-format="ebook audiobook physical" data-reading="young-adult series">
+                            <img src="images/bookCovers/percyJackson_lightningThief.jpg" alt="Percy Jackson book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Adventure</span>
+                                <h3>Percy Jackson and the Lightning Thief</h3>
+                                <p>By Rick Riordan</p>
+                                <p>A young boy discovers he is part of the world of Greek mythology.</p>
+                                <a href="bookDetails.html?id=percy-jackson" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+
+                        <div class="genre-book-container">
+                        <div class="explore-book-card" data-type="fiction" data-genre="adventure" data-format="ebook physical" data-reading="adult">
+                            <img src="images/adventure-book.jpg" alt="Adventure book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Adventure</span>
+                                <h3>Book Title</h3>
+                                <p>By Author Name</p>
+                                <p>Add a short description of the story here.</p>
+                                <a href="#" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </section>
+
+                <!-- Sci-Fi -->
+                <section class="genre-section" id="scifi">
+                    <div class="genre-heading">
+                        <h2>Sci-Fi</h2>
+                        <p>Explore futuristic worlds, technology, and the unknown.</p>
+                    </div>
+
+                    <div class="genre-book-container">
+                        <div class="explore-book-card" data-type="fiction" data-genre="scifi" data-format="ebook physical" data-reading="adult">
+                            <img src="images/scifi-book.jpg" alt="Sci-Fi book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Sci-Fi</span>
+                                <h3>Book Title</h3>
+                                <p>By Author Name</p>
+                                <p>Add a short description of the story here.</p>
+                                <a href="#" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Horror -->
+                <section class="genre-section" id="horror">
+                    <div class="genre-heading">
+                        <h2>Horror</h2>
+                        <p>Dark stories, eerie settings, and spine-chilling mysteries.</p>
+                    </div>
+
+                    <div class="genre-book-container">
+                        <div class="explore-book-card" data-type="fiction" data-genre="horror" data-format="ebook physical" data-reading="adult">
+                            <img src="images/horror-book.jpg" alt="Horror book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Horror</span>
+                                <h3>Book Title</h3>
+                                <p>By Author Name</p>
+                                <p>Add a short description of the story here.</p>
+                                <a href="#" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Historical -->
+                <section class="genre-section" id="historical">
+                    <div class="genre-heading">
+                        <h2>Historical</h2>
+                        <p>Immerse yourself in the past with tales of real or imagined historical events.</p>
+                    </div>
+
+                    <div class="genre-book-container">
+                        <div class="explore-book-card" data-type="fiction" data-genre="historical" data-format="ebook physical" data-reading="adult">
+                            <img src="images/historical-book.jpg" alt="Historical book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Historical</span>
+                                <h3>Book Title</h3>
+                                <p>By Author Name</p>
+                                <p>Add a short description of the story here.</p>
+                                <a href="#" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Comedy -->
+                <section class="genre-section" id="comedy">
+                    <div class="genre-heading">
+                        <h2>Comedy</h2>
+                        <p>Humorous tales, funny situations, and laugh-out-loud moments.</p>
+                    </div>
+
+                    <div class="genre-book-container">
+                        <div class="explore-book-card" data-type="fiction" data-genre="comedy" data-format="ebook physical" data-reading="adult">
+                            <img src="images/comedy-book.jpg" alt="Comedy book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Comedy</span>
+                                <h3>Book Title</h3>
+                                <p>By Author Name</p>
+                                <p>Add a short description of the story here.</p>
+                                <a href="#" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Dystopian -->
+                <section class="genre-section" id="dystopian">
+                    <div class="genre-heading">
+                        <h2>Dystopian</h2>
+                        <p>Explore dark, oppressive futures and the struggle for survival.</p>
+                    </div>
+
+                    <div class="genre-book-container">
+
+                        <div class="explore-book-card" data-type="fiction" data-genre="dystopian" data-format="ebook audiobook physical" data-reading="young-adult series">
+                            <img src="images/bookCovers/hungerGames.jpg" alt="The Hunger Games book cover">
+                            <div class="explore-book-info">
+                                <span class="book-genre">Dystopian</span>
+                                <h3>The Hunger Games</h3>
+                                <p>By Suzanne Collins</p>
+                                <p>A teenager is forced to compete in a televised fight for survival.</p>
+                                <a href="bookDetails.html?id=the-hunger-games" class="learn-more">Learn More →</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Back to Top -->
+    <section class="back-to-top">
+        <a href="#top">Back to Top ↑</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Novel Nook - Literature Website. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Explore Page -->
+    <script src="scripts/explore.js" defer></script>
+
+</body>
+</html>

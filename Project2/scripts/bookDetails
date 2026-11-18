@@ -1,0 +1,85 @@
+
+/* BOOK ID */
+
+// Get the book ID from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const bookId = urlParams.get("id");
+
+
+/* BOOK DATABASE */
+
+fetch("data/books.json")
+    .then(function(response) {
+
+        if (!response.ok) {
+            throw new Error("Could not load book database.");
+        }
+
+        return response.json();
+
+    })
+
+    .then(function(books) {
+
+        // Find the book that matches the URL ID
+        const selectedBook = books.find(function(book) {
+            return book.id === bookId;
+        });
+
+        // Check if the book exists
+        if (!selectedBook) {
+
+            document.getElementById("book-details").hidden = true;
+            document.querySelector(".book-synopsis").hidden = true;
+            document.getElementById("book-not-found").hidden = false;
+
+            document.title = "Book Not Found | Novel Nook";
+
+            return;
+        }
+
+
+        /* DISPLAY BOOK INFORMATION */
+
+        document.title = selectedBook.title + " | Novel Nook";
+
+        // Book cover
+        const bookCover = document.getElementById("book-cover");
+        bookCover.src = selectedBook.cover;
+        bookCover.alt = selectedBook.title + " book cover";
+
+        // Book information
+        document.getElementById("book-title").textContent = selectedBook.title;
+        document.getElementById("book-author").textContent = "By " + selectedBook.author;
+        document.getElementById("book-genre").textContent = selectedBook.genre;
+        document.getElementById("book-description").textContent = selectedBook.description;
+
+        // Additional details
+        document.getElementById("book-pages").textContent = selectedBook.pages || "Not available";
+        document.getElementById("book-published").textContent = selectedBook.published || "Not available";
+        document.getElementById("book-publisher").textContent = selectedBook.publisher || "Not available";
+        document.getElementById("book-rating").textContent = selectedBook.rating || "Not available";
+        document.getElementById("book-type").textContent = selectedBook.type || "Not available";
+
+        // Display available formats
+        document.getElementById("book-formats").textContent =
+            selectedBook.format.join(", ");
+
+        // Display synopsis
+        document.getElementById("book-synopsis").textContent =
+            selectedBook.synopsis || "More information about this book will be added soon.";
+
+    })
+
+    .catch(function(error) {
+
+        console.error("Error loading book information:", error);
+
+        document.getElementById("book-details").hidden = true;
+        document.querySelector(".book-synopsis").hidden = true;
+
+        const errorMessage = document.getElementById("book-not-found");
+        errorMessage.textContent = "Unable to load book information. Please try again later.";
+        errorMessage.hidden = false;
+
+    });
