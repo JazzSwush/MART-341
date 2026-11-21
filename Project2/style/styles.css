@@ -916,114 +916,135 @@ img {
 }
 
 
-/* =====================================================
-   BOOK DETAILS PAGE
-   ===================================================== */
+
+/* ============================= */
+/* BOOK DETAILS PAGE */
+/* ============================= */
 
 .details-back {
-    padding: 25px 8% 0;
-    background-color: var(--paper);
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 30px;
 }
 
 .details-back a {
     color: var(--olive);
-    font-size: 16px;
-    font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    font-family: "Figtree", sans-serif;
 }
 
 .details-back a:hover {
     color: var(--vermilion);
 }
 
-/* Main Book Details */
-
 .book-details {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
     display: flex;
-    align-items: center;
-    gap: 60px;
-    padding: 55px 8%;
+    align-items: flex-start;
+    gap: 50px;
     background-color: var(--paper);
+    border-radius: 12px;
 }
 
 .details-cover {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    flex: 0 0 300px;
 }
 
 .details-cover img {
     width: 100%;
-    max-width: 350px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(37, 44, 50, 0.2);
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .details-content {
-    flex: 1.5;
+    flex: 1;
+    font-family: "Figtree", sans-serif;
+    color: var(--ink);
 }
 
 .details-content h1 {
+    font-family: "Ledger", serif;
+    font-size: 36px;
+    margin: 12px 0;
     color: var(--ink);
-    font-size: 42px;
-    margin: 15px 0;
 }
 
-.details-content > p {
-    color: var(--olive);
+.details-author {
     font-size: 18px;
-    line-height: 1.7;
+    color: var(--olive);
+    margin-bottom: 20px;
 }
 
-.details-content .book-genre {
-    color: var(--vermilion);
-    font-weight: bold;
+.details-description {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
 }
 
 .details-information {
-    margin-top: 25px;
-    padding: 20px;
-    background-color: #EDE5D8;
-    border-radius: 10px;
+    border-top: 1px solid var(--olive);
+    padding-top: 15px;
 }
 
 .details-information p {
-    color: var(--ink);
-    font-size: 16px;
-    margin: 10px 0;
+    margin: 12px 0;
     line-height: 1.5;
 }
 
-/* Book Synopsis */
+.details-information strong {
+    color: var(--olive);
+}
 
 .book-synopsis {
-    padding: 55px 8%;
-    background-color: var(--olive);
+    max-width: 1100px;
+    margin: 40px auto 60px;
+    padding: 30px 40px;
+    font-family: "Figtree", sans-serif;
+    color: var(--ink);
 }
 
 .book-synopsis h2 {
-    color: var(--paper);
-    font-size: 32px;
-    margin-top: 0;
+    font-family: "Ledger", serif;
+    color: var(--vermilion);
+    margin-bottom: 15px;
 }
 
 .book-synopsis p {
-    max-width: 900px;
-    color: var(--paper);
     font-size: 18px;
     line-height: 1.8;
 }
 
-/* Book Not Found */
-
 #book-not-found {
-    padding: 60px 8%;
-    color: var(--vermilion);
-    font-size: 20px;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
     text-align: center;
+    font-family: "Figtree", sans-serif;
+    color: var(--ink);
+}
+
+#book-not-found h2 {
+    font-family: "Ledger", serif;
+    color: var(--vermilion);
+    margin-bottom: 15px;
+}
+
+#book-not-found p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+#book-not-found .learn-more {
+    display: inline-block;
+}
+
+[hidden] {
+    display: none !important;
 }
 
 /* =====================================================
@@ -1493,6 +1514,35 @@ footer p {
         padding: 55px 5%;
     }
 
+}
+
+@media (max-width: 768px) {
+    .book-details {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .details-cover {
+        flex: none;
+        width: 65%;
+        max-width: 280px;
+    }
+
+    .details-content {
+        width: 100%;
+    }
+
+    .details-content h1 {
+        font-size: 28px;
+    }
+
+    .book-synopsis {
+        margin: 20px;
+        padding: 20px;
+    }
 }
 
 /* =====================================================

@@ -50,11 +50,13 @@ filterForm.addEventListener("submit", function(event) {
         const formatMatch =
             selectedFormats.length === 0 ||
             selectedFormats.some(format => bookFormats.includes(format));
-
+            
         // Check book type
         const typeMatch =
             selectedTypes.length === 0 ||
-            selectedTypes.includes(bookType);
+            selectedTypes.some(type =>
+            type.toLowerCase().replace("-", "") ===
+            bookType.toLowerCase().replace("-", ""));
 
         // Check reading preferences
         const readingMatch =

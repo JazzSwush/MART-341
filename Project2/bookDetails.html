@@ -4,13 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" type="text/css" href="style/styles.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Ledger&display=swap" rel="stylesheet">
-
     <title>Book Details | Novel Nook</title>
 </head>
 
@@ -45,22 +42,18 @@
             <a href="explore.html">← Back to Explore</a>
         </div>
 
-        <!-- Book Information -->
-        <section class="book-details" id="book-details">
+        <!-- Book Details -->
+        <section class="book-details" id="book-details" hidden>
 
             <div class="details-cover">
                 <img id="book-cover" src="" alt="Book cover">
             </div>
 
             <div class="details-content">
-
-                <span id="book-genre" class="book-genre"></span>
-
-                <h1 id="book-title">Loading book...</h1>
-
-                <p id="book-author"></p>
-
-                <p id="book-description"></p>
+                <span class="book-genre" id="book-genre"></span>
+                <h1 id="book-title"></h1>
+                <p class="details-author" id="book-author"></p>
+                <p class="details-description" id="book-description"></p>
 
                 <div class="details-information">
                     <p><strong>Pages:</strong> <span id="book-pages"></span></p>
@@ -70,21 +63,22 @@
                     <p><strong>Book Type:</strong> <span id="book-type"></span></p>
                     <p><strong>Available Formats:</strong> <span id="book-formats"></span></p>
                 </div>
-
             </div>
 
         </section>
 
         <!-- Book Synopsis -->
-        <section class="book-synopsis">
+        <section class="book-synopsis" id="book-synopsis-section" hidden>
             <h2>About This Book</h2>
             <p id="book-synopsis"></p>
         </section>
 
         <!-- Book Not Found -->
-        <p id="book-not-found" hidden>
-            Sorry, we couldn't find this book. Please return to Explore and try again.
-        </p>
+        <section id="book-not-found" hidden>
+            <h2>Book Not Found</h2>
+            <p>Sorry, we couldn't find this book. Please return to Explore and try another one.</p>
+            <a href="explore.html" class="learn-more">Browse Books →</a>
+        </section>
 
     </main>
 
@@ -99,7 +93,7 @@
     </footer>
 
     <!-- JavaScript for Book Details -->
-    <script src="scripts/book-details.js" defer></script>
+    <script src="scripts/bookDetails.js" defer></script>
 
 </body>
 </html>
